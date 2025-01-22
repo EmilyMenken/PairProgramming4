@@ -1,4 +1,13 @@
 html {
     background-color:red;
     color:white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+color:blue;
+flex-direction: column;
+justify-content: center;
+align-content: center;
 }
