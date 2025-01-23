@@ -1,13 +1,43 @@
-body {
-    background-color:red;
-    color:white;
+header{
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10px;
 }
 
-header{
-color:blue;
-flex-direction: column;
-justify-content: center;
-align-content: center;
+body {
+    background-color:purple;
+    color:lightyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border-style: solid;
+    border: 3px;
+    border-radius: 4px;
+    border-color: goldenrod;
+}
+
+img
+{
+    width: 200px;
+    height: auto;
+    border-radius: 3px;
+}
+
+p
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

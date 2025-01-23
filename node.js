@@ -1,15 +1,18 @@
 import express from 'express';
 
-const node = express();
+const app = express();
 
-node.use(express.static('public'));
+app.use(express.static('public'));
 
+app.get('/', (req, res) =>
+    {
+        //res.send('hello world');
+        res.sendFile(`${import.meta.dirname}/views/index.html`);
+    }
+);
 
-/* Unable to get CSS connected to HTML when running through the node app*/
-node.get('/', (req,res) => {
-res.sendFile(`${import.meta.dirname}/views/index.html`);
-})
-
-node.listen(3000, () =>{
-    console.log('Server running at http://localHost:3000')
-})
+app.listen(3000, () =>
+    {
+        console.log('Server running at http://localhost:3000');
+    }
+);
